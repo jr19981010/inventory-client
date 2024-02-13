@@ -7,7 +7,7 @@ import { FaPlus, FaTimes } from 'react-icons/fa';
 
 const AddInventory = ({ addInventory, setAddInventory, reload, setReload }) => {
   const invName = useRef();
-  const invStatus = useRef();
+  const invCat = useRef();
   const invQuantity = useRef();
   const [ dataItem, setDataItem ] = useState([]);
   const [ dataCategory, setDataCategory ] = useState([]);
@@ -38,7 +38,7 @@ const emitWithCallback = (eventName, data) =>{
 
 const handleInvData = async () => {
   const invNameVal = invName.current.value;
-  const invStatVal = invStatus.current.value;
+  const invStatVal = invCat.current.value;
   const invQuanVal = invQuantity.current.value;
 
   const setInvData = {
@@ -64,8 +64,8 @@ const handleInvData = async () => {
         <option key={item.id} value={item.id}>{item.name}</option>
         ))}
       </select>
-      <label htmlFor="status">Status</label>
-      <select ref={invStatus} id="status" name="status">
+      <label htmlFor="category">Category</label>
+      <select ref={invCat} id="category" name="category">
         {dataCategory.map((category) => (
           <option key={category.id} value={category.id}>{category.name}</option>
         ))}
