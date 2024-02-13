@@ -1,0 +1,154 @@
+.sec-inventory {
+    margin-inline: auto;
+    max-width: 50%;
+    min-width: 200px;
+    background-color:#ffffff; 
+  
+}
+.title-srch-sec{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    align-items: center;
+}
+
+.tbl-inv-list{
+    width: 100%;
+}
+.tbl-inv-list th, .tbl-inv-list td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+  
+.tbl-inv-list th {
+    background-color: #ffffff; 
+    color: #000000;
+  }
+
+.inv-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inv-srch{
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.add-inv-btn{
+    background-color:#007bff;
+    color: #ffffff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+}
+
+    
+.add-inv-btn:hover{
+    cursor: pointer;
+}
+
+.edit-inv-btn{
+    background-color: #2ecc71;
+    color: #ffffff; /* Text color for Edit button */
+      border-radius: 5px;
+    border: none;
+    height: 30px;
+    width: auto;
+}
+
+.delete-inv-btn{
+    background-color: #e74c3c;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    width: auto;
+}
+.tbl-inv-list tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+.tbl-inv-list tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.btn-ctrl-inv-sec{
+    display: flex;
+    justify-content: center;
+}
+.btn-ctrl-inv-sec button{
+    width: 50px;
+    margin-right: 5px;
+}
+
+.dtl-inv{
+    display: flex;
+    position: relative;
+}
+
+.dtl-page{
+    position: absolute;
+    right: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+.dtl-page li{
+    border: 1px solid #000;
+    margin-bottom: 4px;
+    padding: 8px;
+    border: 1px solid #c4c3c4;
+}
+.dtl-page li:first-child{
+    border-radius: 5px 0 0 5px;   
+}
+.dtl-page .inv-active{
+    background-color: #007bff;
+    color: white;
+}
+.dtl-page li:not(:last-child) {
+    border-right: none;
+}
+.dtl-page li:last-child{
+    border-radius: 0 5px 5px 0;
+}
+.prev-li.disabled,
+.next-li.disabled {
+  opacity: 0.5;
+  cursor: not-allowed; 
+  pointer-events: none;
+}
+.dtl-page li:hover{
+    cursor: pointer;
+    background-color:#007bff;
+    color: #ffffff; 
+}
+
+
+.not-found-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .not-found-message {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .not-found-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #f00;
+  }
+  

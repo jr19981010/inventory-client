@@ -1,0 +1,54 @@
+.del-inventory-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.modal-delInv-content {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    position: absolute;
+    top: 10%;
+}
+
+
+.modal-delInv-content select,
+.modal-delInv-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.add-delInv-btn, .del-delInv-btn {
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.add-delInv-btn{
+    margin-right: 5px;
+}
+
+ .del-delInv-btn{
+    background-color: red;
+}
+.ctrl-delInv-sec {
+    display: flex;
+    justify-content: flex-end;
+}
